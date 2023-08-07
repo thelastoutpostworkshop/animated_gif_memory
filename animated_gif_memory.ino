@@ -38,7 +38,7 @@ void setup() {
   tft.fillScreen(TFT_BLACK);
   gif.begin(BIG_ENDIAN_PIXELS);
 }
-#ifdef NORMAL_SPEED // Render at rate that is GIF controlled
+
 void loop()
 {
   // Put your main code here, to run repeatedly:
