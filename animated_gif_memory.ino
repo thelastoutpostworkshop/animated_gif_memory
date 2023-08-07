@@ -19,12 +19,15 @@ AnimatedGIF gif;
 #include "images/x_wing.h"
 
 // Uncomment the image to display
+// You could run out of program memory if you load more than one image
+// You can also increase the program memory by changing the partition of the ESP32
+// See this tutorial to increase program memory: https://youtu.be/NTbiKssK8_8
 //
 // #define GIF_IMAGE hyperspace
-#define GIF_IMAGE nostromo
+// #define GIF_IMAGE nostromo
 // #define GIF_IMAGE darthvader
 // #define GIF_IMAGE hud_1
-// #define GIF_IMAGE hud_2
+#define GIF_IMAGE hud_2
 // #define GIF_IMAGE hud_5
 // #define GIF_IMAGE hud_6
 // #define GIF_IMAGE hud_7
