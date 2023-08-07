@@ -27,11 +27,11 @@ AnimatedGIF gif;
 // #define GIF_IMAGE nostromo
 // #define GIF_IMAGE darthvader
 // #define GIF_IMAGE hud_1
-#define GIF_IMAGE hud_2
+// #define GIF_IMAGE hud_2
 // #define GIF_IMAGE hud_5
 // #define GIF_IMAGE hud_6
 // #define GIF_IMAGE hud_7
-// #define GIF_IMAGE x_wing
+#define GIF_IMAGE x_wing
 
 TFT_eSPI tft = TFT_eSPI();
 void setup() {
