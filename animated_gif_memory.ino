@@ -3,8 +3,8 @@
 // ESP32 40MHz SPI single frame rendering performance
 
 #include <SPI.h>
-#include <TFT_eSPI.h>     // Install this library whit the Arduino Library Manager
-#include <AnimatedGIF.h>  // Install this library whit the Arduino Library Manager
+#include <TFT_eSPI.h>     // Install this library whit the Arduino IDE Library Manager
+#include <AnimatedGIF.h>  // Install this library whit the Arduino IDE Library Manager
 AnimatedGIF gif;
 
 // Examples images
@@ -29,9 +29,9 @@ AnimatedGIF gif;
 // #define GIF_IMAGE hud_1
 // #define GIF_IMAGE hud_2
 // #define GIF_IMAGE hud_5
-// #define GIF_IMAGE hud_6
+#define GIF_IMAGE hud_6
 // #define GIF_IMAGE hud_7
-#define GIF_IMAGE x_wing
+// #define GIF_IMAGE x_wing
 
 TFT_eSPI tft = TFT_eSPI();
 void setup() {
