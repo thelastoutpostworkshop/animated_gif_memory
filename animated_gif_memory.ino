@@ -3,8 +3,8 @@
 // ESP32 40MHz SPI single frame rendering performance
 
 #include <SPI.h>
-#include <TFT_eSPI.h>
-#include <AnimatedGIF.h>
+#include <TFT_eSPI.h>     // Install this library whit the Arduino Library Manager
+#include <AnimatedGIF.h>  // Install this library whit the Arduino Library Manager
 AnimatedGIF gif;
 
 // Examples images
@@ -37,23 +37,22 @@ TFT_eSPI tft = TFT_eSPI();
 void setup() {
   Serial.begin(115200);
   tft.begin();
-  tft.setRotation(2);
+  tft.setRotation(2);     // Adjust Rotation of your screen (0-3)
   tft.fillScreen(TFT_BLACK);
   gif.begin(BIG_ENDIAN_PIXELS);
 }
 
 void loop()
 {
-  // Put your main code here, to run repeatedly:
   if (gif.open((uint8_t *)GIF_IMAGE, sizeof(GIF_IMAGE), GIFDraw))
   {
     Serial.printf("Successfully opened GIF; Canvas size = %d x %d\n", gif.getCanvasWidth(), gif.getCanvasHeight());
-    tft.startWrite(); // The TFT chip slect is locked low
+    tft.startWrite();
     while (gif.playFrame(true, NULL))
     {
       yield();
     }
     gif.close();
-    tft.endWrite(); // Release TFT chip select for other SPI devices
+    tft.endWrite(); 
   }
 }

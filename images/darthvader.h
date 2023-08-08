@@ -5,7 +5,6 @@
 // GIF, Compression=LZW, Size: 240 x 240, 8-Bpp
 // 3 frames
 //
-// for non-Arduino builds...
 #ifndef PROGMEM
 #define PROGMEM
 #endif
