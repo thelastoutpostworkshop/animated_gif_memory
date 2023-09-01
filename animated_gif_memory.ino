@@ -17,12 +17,14 @@ AnimatedGIF gif;
 #include "images/hud_7.h"
 #include "images/darthvader.h"
 #include "images/x_wing.h"
+#include "images/colortest.h"
 
 // Uncomment the image to display
 // You could run out of program memory if you load more than one image
 // You can also increase the program memory by changing the partition of the ESP32
 // See this tutorial to increase program memory: https://youtu.be/NTbiKssK8_8
 //
+// #define GIF_IMAGE colortest
 // #define GIF_IMAGE hyperspace
 // #define GIF_IMAGE nostromo
 // #define GIF_IMAGE darthvader
