@@ -4,6 +4,8 @@
 
 #include <SPI.h>
 #include <TFT_eSPI.h>     // Install this library with the Arduino IDE Library Manager
+                          // Don't forget to configure the driver for the display!
+                          
 #include <AnimatedGIF.h>  // Install this library with the Arduino IDE Library Manager
 AnimatedGIF gif;
 
