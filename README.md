@@ -1,7 +1,7 @@
 # Animated GIF on a Round Display (GC9A01) with the ESP32 - Memory-Based Version
 <a href="https://www.buymeacoffee.com/thelastoutpostworkshop" target="_blank">
     <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee">
-</a>
+</a><br/>
 ### Youtube Tutorial
 https://youtu.be/mqSe_uMpxIs
 
